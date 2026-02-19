@@ -53,8 +53,8 @@ GROUP BY T.cust_id) X
 WHERE NO_OF_ORDER > 10
 
 
---8. What is the combined revenue earned from the ìElectronicsî & ìClothingî 
---categories, from ìFlagship storesî? 
+--8. What is the combined revenue earned from the ‚ÄúElectronics‚Äù & ‚ÄúClothing‚Äù 
+--categories, from ‚ÄúFlagship stores‚Äù? 
 SELECT ROUND(SUM(total_amt),2) REVENUE 
 FROM(SELECT Store_type,total_amt,T.prod_cat_code,prod_cat
 FROM prod_cat_info P
@@ -63,7 +63,7 @@ ON T.prod_cat_code = P.prod_cat_code
 WHERE Store_type = 'Flagship store' AND total_amt > 0) X
 WHERE prod_cat = 'Electronics' OR prod_cat = 'CLOTHING'
 
---9. What is the total revenue generated from ìMaleî customers in ìElectronicsî 
+--9. What is the total revenue generated from ‚ÄúMale‚Äù customers in ‚ÄúElectronics‚Äù 
 --category? Output should display total revenue by prod sub-cat.
 SELECT
 	P.prod_subcat ,
@@ -194,3 +194,4 @@ p.prod_cat_code IN  (SELECT prod_cat_code FROM TOP5_QTY)
 GROUP BY P.prod_cat,P.prod_subcat,P.prod_cat_code
 ORDER BY P.prod_cat
 ;
+
