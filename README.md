@@ -39,3 +39,10 @@ To practice and demonstrate SQL skills required for a Data Analyst role by solvi
 🚀 About Me
 Aspiring Data Analyst skilled in SQL, Excel, Power BI, and Python.  
 Actively looking for Data Analyst opportunities.
+
+
+
+Note: This project was completed as part of my data analytics training. 
+The dataset used in this project belongs to the training institute and is not publicly shared. 
+All SQL queries and analysis are written by me for learning and practice purposes.
+
